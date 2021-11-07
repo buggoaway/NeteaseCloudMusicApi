@@ -11,14 +11,14 @@ module.exports = (query, request) => {
   }
   return request(
     'POST',
-    `https://interface3.music.163.com/eapi/song/enhance/player/url`,
+    `https://interface3.music.163.com/eapi/program/enhance/player/url`,
     data,
     {
       crypto: 'eapi',
       cookie: query.cookie,
       proxy: query.proxy,
       realIP: query.realIP,
-      url: '/api/song/enhance/player/url',
+      url: '/api/program/enhance/player/url',
     },
   )
 }
